@@ -2,7 +2,7 @@ from syllable import syl_count
 import nltk, string
 from nltk.tokenize.punkt import PunktWordTokenizer as tok
 
-def flesh(sent):
+def flesch(sent):
 	ty = type(sent)
 	if ty==str:
 		sent = tok().tokenize(sent.translate(None, string.punctuation))
